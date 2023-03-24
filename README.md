@@ -1,7 +1,7 @@
 # AO3_Fandom_Scrape
 ## Python scripts for scraping data from the AO3 (archiveofourown.org).
 
-This is very much a work in progress as I am still learning Python; some bits of coding may be less efficient than they could be, and there are some changes I have to make to improve use. I have tested quite thoroughly, but errors always have a way of happening even with the best testing. 
+This is very much a work in progress as I am still learning Python; some bits of coding are slightly cobbled together and may be less efficient than they could be, and there are some changes I have to make to improve use. I have tested quite thoroughly, but errors always have a way of happening even with the best testing. 
 
 ### Note on AO3's TOS for Web-scraping
 Per their post: 'Selective data dump for fan statisticians' on the 21st March 2021
