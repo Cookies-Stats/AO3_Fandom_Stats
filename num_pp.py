@@ -90,7 +90,7 @@ def main():
 		# Print the progress message
         print(f"URL {index - 1} successfully scraped")
 		
-        time.sleep(8)  # Rate limiting per AO3's requests (can be as low as 5, 10 used for extra courtesy)
+        time.sleep(6)  # Rate limiting per AO3's requests (can be as low as 5 and can be higher)
 
     # Save the workbook to an Excel file
     workbook.save("results.xlsx")
