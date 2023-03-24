@@ -58,7 +58,17 @@ def main():
 
     # Read URLs from the text file
     with open("urls.txt", "r", encoding='utf-8') as file:
-        urls = [url.strip() for url in file.readlines()]
+        lines = file.readlines()
+		
+    data = []
+	
+    for line in lines:
+        #Split the line into three columns: Pairing, Category, and URL
+        pairing, category, url = line.strip().split("\t")
+		
+        work_count = get_work_count(session, url)
+        data.append((pairing, category, work_count))
+        print(f"Pairing: {pairing}, Category: {category}, Works: {work_count}")
 
     # Create a new Excel workbook
     workbook = Workbook()
@@ -66,14 +76,16 @@ def main():
     worksheet.title = "Results"
 
     # Write header to the Excel worksheet
-    worksheet.cell(row=1, column=1, value="URL")
-    worksheet.cell(row=1, column=2, value="Work Count")
+    worksheet.cell(row=1, column=1, value="Pairing")
+    worksheet.cell(row=1, column=2, value="Category")
+    worksheet.cell(row=1, column=3, value="Work Count")
+	
 
     # Loop through URLs and write the results to the Excel worksheet
-    for index, url in enumerate(urls, start=2):
-        work_count = get_work_count(session, url)
-        worksheet.cell(row=index, column=1, value=url)
-        worksheet.cell(row=index, column=2, value=work_count)
+    for index, (pairing, category, work_count) in enumerate(data, start=2):
+        worksheet.cell(row=index, column=1, value=pairing)
+        worksheet.cell(row=index, column=2, value=category)
+        worksheet.cell(row=index, column=3, value=work_count)
 		
 		# Print the progress message
         print(f"URL {index - 1} successfully scraped")
