@@ -3,13 +3,20 @@
 
 This is very much a work in progress as I am still learning Python; some bits of coding may be less efficient than they could be, and there are some changes I have to make to improve use. I have tested quite thoroughly, but errors always have a way of happening even with the best testing. 
 
+### Note on AO3's TOS for Web-scraping
+Per their post: 'Selective data dump for fan statisticians' on the 21st March 2021
+"We hope to one day be able to provide regular, automatic dumps of this data, but for now, our focus is on other projects. In the meantime, there are a number of tools available to scrape publicly available data, or you're welcome to build your own. (If you're planning to scrape the Archive, we do ask that you include a delay between requests to reduce load on our servers, and avoid scraping on weekends, which are our busiest time. We'd also appreciate it if you could set your scraper's user agent string to include the word "bot.")"
+
 ------------------
 
 ## Setup
 I have not yet explored Github enough to know how to package for installation via command prompt. So for now
 1.  Fully install Python 3 from https://www.python.org
 2.  Use Command Prompt and the following string (without quotations) to install other components needed: "pip install beautifulsoup4 requests openpyxl pandas"
-3.  Choose a location to save all the python, text, and output files. Download the files to that location. If you are scraping pairings, you will also need to create a .txt file in that location with all your pairings saved, one per line, in the way they appear on AO3 (more below)
+3.  Choose a location to save all the python, text, and output files. Download the files to that location. You will need to create some .txt files that the scripts pull from.
+    1. user_agent.txt - AO3 ask (as above) that user agents contain the string 'bot'. A search online of "what is my user agent" can help you find what yours is so you'll paste that into the .txt followed by a semi-colon ; then an identifier of your bot e.g happy.bot. I also add a forward slash and then my e-mail address to adhere to ethical scraping.
+    2. login.txt - If you want to be logged into AO3 (to see the stats including Restricted Works) then you'll need to create a login.txt with your username on the top line and your password on the second line.
+    3. pairings.txt - If you are scraping multiple pairings, you will also need to create a .txt file in that location with all your pairings saved, one per line, in the way they appear on AO3 (more below)
 4.  In Command Prompt, cd C:\Enter\Folder\Location (e.g. C:\Users\Zephyr\AO3_Python) will take you to the location so you can run the files without needing to type in the full location string. (Note: if you use the python files regularly and want a short-cut, how to do this will be shown below.)
 5.  Choose the script (single or combination, described below) you want to run and call the file by typing: python example_script.py into the command prompt.
 6.  Some scripts just run without anymore input, others require you to type into the command prompt. This is indicated below. 
