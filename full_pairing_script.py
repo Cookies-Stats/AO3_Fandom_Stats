@@ -1,7 +1,7 @@
 import subprocess
 
 #List of scripts to run in order
-scripts = ["pair_break_month.py", "num_pp.py", "striptext.py"]
+scripts = ["gen_pair.py", "num_pp.py", "striptext.py"]
 
 #Run each script in the list
 for script in scripts:
