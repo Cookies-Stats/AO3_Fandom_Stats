@@ -9,10 +9,21 @@ Have not yet explored Github enough to know how to package for installation via 
 1.  Fully install Python 3 from https://www.python.org
 2.  Use Command Prompt and the following string (without quotations) to install other components needed: "pip install beautifulsoup4 requests openpyxl pandas"
 3.  Choose a location to save all the python, text, and output files. Download the files to that location. If you are scraping pairings, you will also need to create a .txt file in that location with all your pairings saved, one per line, in the way they appear on AO3 (more below)
-4.  In Command Prompt, cd C:\Enter\Folder\Location (e.g. C:\Users\Zephyr\AO3_Python) will take you to the location so you can run the files without needing to type in the full location string. (Note: if you use the python files regularly and want a short-cut, how to do this will be shown near the bottom of the   readme)
+4.  In Command Prompt, cd C:\Enter\Folder\Location (e.g. C:\Users\Zephyr\AO3_Python) will take you to the location so you can run the files without needing to type in the full location string. (Note: if you use the python files regularly and want a short-cut, how to do this will be shown below.)
 5.  Choose the script (single or combination, described below) you want to run and call the file by typing: python example_script.py into the command prompt.
 6.  Some scripts just run without anymore input, others require you to type into the command prompt. This is indicated below. 
 7.  The scripts with work together use a set series of file names to call the next step so if you are doing multiple batches of scraping, make sure to rename       the generated files (url.txt, results.xlsx etc.) to something else before running more scripts. I have no yet tested whether subsequent runs will correctly     append. Once I have, I'll update this Read Me.
+
+------------------
+
+## Shortcut to File Locations
+If you find yourself using the python files regularly and want to skip the step of using cd C:\Enter\Folder\Location each time, then open up a .txt file (in Notepad or equivalent) and type the following in (changing the location path to where your folder is):
+
+@echo off
+cd C:\Enter\Folder\Location
+cmd
+
+Not save the file as change_dir.bat and in the future, you can double click that and it'll load your Command Prompt up in the directory of where you're keeping your Python files.
 
 ------------------
 
