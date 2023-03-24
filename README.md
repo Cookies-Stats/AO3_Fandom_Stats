@@ -17,8 +17,8 @@ PAIRINGS.TXT FILE
 To run the scripts which search for pairing numbers, you will need to create a .txt file that has each of the pairings you want to generate a URL about, with each pairing on its own line. I have included a .txt file with the top 100 F/F pairings of 2022 as an example [Remember to not place this .txt into your working folder unless you want to use it].
 
 With this file, the pairing names must look how they do on AO3 or it will not scrape the page. One common thing I find is that people do not know how to write the | symbol that is used to separate when a character has two used names e.g. Evil Queen| Regina Mills/Emma Swan so sometimes will us the letters lowercase L or uppercase i which then do not work for generating the URL. So copy the pairings exactly as they are from AO3.
-
-
+.
+.
 COMBO 1: NUMBER OF WORKS FOR A LIST OF PAIRINGS (ALL-TIME)
 This will use a "pairings.txt" file to scrape the number of works for each pairing on AO3, without a date restriction, and output a file showing the pairing name and the number of works to a .xlsx
 
@@ -26,14 +26,14 @@ Once you have created your pairings.txt file, and navigated your Command Prompt 
 Various messages should indicate that it is processing (e.g. no Error messages)
 Once complete, a .xslx file will have been created with the pairings and work numbers.
 
-# Note, I need to work out how to remove an unwanted space from the works (numbers) column. Until done, select that column, use Ctrl + H, put a space in the "Find" box and leave the "Replace" box blank of anything, then 'Replace All'
+Note - I need to work out how to remove an unwanted space from the works (numbers) column. Until done, select that column, use Ctrl + H, put a space in the "Find" box and leave the "Replace" box blank of anything, then 'Replace All'
 
 full_pairing_script.py will run the following files:
     gen_pair.py
     num_pp.py
     striptext.py
-
-
+.
+.
 STANDALONE 1: FIND FIRST 300 CHARACTER, RELATIONSHIP, AND FREEFORM TAGS IN A FANDOM PAGE
 This pulls the information from the page that you get if you click the Underlined name of the Fandom at the top of that fandom's works page. It can also be reached through https://archiveofourown.org/tags/Fandom Name e.g. https://archiveofourown.org/tags/Supergirl
 
