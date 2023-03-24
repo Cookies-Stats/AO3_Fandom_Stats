@@ -7,6 +7,8 @@ This is very much a work in progress as I am still learning Python; some bits of
 Per their post: 'Selective data dump for fan statisticians' on the 21st March 2021
 "We hope to one day be able to provide regular, automatic dumps of this data, but for now, our focus is on other projects. In the meantime, there are a number of tools available to scrape publicly available data, or you're welcome to build your own. (If you're planning to scrape the Archive, we do ask that you include a delay between requests to reduce load on our servers, and avoid scraping on weekends, which are our busiest time. We'd also appreciate it if you could set your scraper's user agent string to include the word "bot.")"
 
+I have a delay of 6 (the lowest they ask for is 5) in the script that does the actual scraping (num_pp.py) but I tend to alter it myself to a higher number (10 seconds or more) if I'm leaving it to run. The location is marked with a comment so you can alter it easily. Please do not lower it below 5; not only does it put pressure on the servers, it also increases the likelihood of the webpage not loading (the "Retry later" message) and then you won't get the data anyway because those pages will be missed or an error will occur.
+
 ------------------
 
 ## Setup
