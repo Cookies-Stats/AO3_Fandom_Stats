@@ -80,7 +80,7 @@ fpairing_choose_date.py will run the following files:
 ------------------
 
 ## STANDALONE 1: FIND FIRST 300 CHARACTER, RELATIONSHIP, AND FREEFORM TAGS IN A FANDOM PAGE
-This pulls the information from the page that you get if you click the Underlined name of the Fandom at the top of that fandom's works page. It can also be reached through https://archiveofourown.org/tags/Fandom Name e.g. https://archiveofourown.org/tags/Supergirl_(TV 2015)
+This pulls the information from the page that you get if you click the Underlined name of the Fandom at the top of that fandom's works page. It can also be reached through https://archiveofourown.org/tags/Fandom Name e.g. https://archiveofourown.org/tags/Supergirl_(TV_2015)
 
 It will take the three categories (characters, relationships, freeform) and write them into a .xlsx file.
 I am working on adding the feature to the file so that it will automatically delimit based on the comma that separates each section, but until I have done that you can do the following in Excel: High data to be separated, go to Data tab at top, choose 'Text to columns', select the 'Delimited' radio button then next, uncheck default option (usually 'Tab') and check 'Comma'. Press finish.
