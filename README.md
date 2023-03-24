@@ -1,11 +1,12 @@
 # AO3_Fandom_Scrape
 ## Python scripts for scraping data from the AO3 (archiveofourown.org).
 
-Have not yet explored Github enough to know how to package for installation via command prompt. So for now
+This is very much a work in progress as I am still learning Python; some bits of coding may be less efficient than they could be, and there are some changes I have to make to improve use. I have tested quite thoroughly, but errors always have a way of happening even with the best testing. 
 
 ------------------
 
 ## Setup
+I have not yet explored Github enough to know how to package for installation via command prompt. So for now
 1.  Fully install Python 3 from https://www.python.org
 2.  Use Command Prompt and the following string (without quotations) to install other components needed: "pip install beautifulsoup4 requests openpyxl pandas"
 3.  Choose a location to save all the python, text, and output files. Download the files to that location. If you are scraping pairings, you will also need to create a .txt file in that location with all your pairings saved, one per line, in the way they appear on AO3 (more below)
