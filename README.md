@@ -30,7 +30,9 @@ I have not yet explored Github enough to know how to package for installation vi
 If you find yourself using the python files regularly and want to skip the step of using cd C:\Enter\Folder\Location each time, then open up a .txt file (in Notepad or equivalent) and type the following in (changing the location path to where your folder is):
 
 @echo off
+
 cd C:\Enter\Folder\Location
+
 cmd
 
 Not save the file as change_dir.bat and in the future, you can double click that and it'll load your Command Prompt up in the directory of where you're keeping your Python files.
