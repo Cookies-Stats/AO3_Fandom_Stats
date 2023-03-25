@@ -55,10 +55,7 @@ Once complete, a .xslx file will have been created with the pairings and work nu
 
 Note - I need to work out how to remove an unwanted space from the works (numbers) column. Until done, select that column, use Ctrl + H, put a space in the "Find" box and leave the "Replace" box blank of anything, then 'Replace All'
 
-full_pairing_script.py will run the following files:
-    gen_pair.py
-    num_pp.py
-    striptext.py
+full_pairing_script.py will run the following files: gen_pair.py, num_pp.py, and striptext.py
 
 ------------------
 
@@ -75,9 +72,9 @@ Once complete, a .xslx file will have been created with the pairings and work nu
 Note - I need to work out how to remove an unwanted space from the works (numbers) column. Until done, select that column, use Ctrl + H, put a space in the "Find" box and leave the "Replace" box blank of anything, then 'Replace All'
 
 fpairing_choose_date.py will run the following files:
-    pairing_date_range.py
-    num_pp.py
-    striptext.py
+    pairing_date_range.py,
+    num_pp.py,
+    striptext.py.
 
 ------------------
 
