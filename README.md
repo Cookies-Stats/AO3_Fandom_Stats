@@ -3,13 +3,19 @@
 
 This is very much a work in progress as I am still learning Python; some bits of coding are slightly cobbled together and may be less efficient than they could be, I've left some print() components in that could be improved but were added in to confirm the code worked, and there are some changes I have to make to improve use. I do not have a timeline for this as this is just a bit of fun. I have tested quite thoroughly, but errors always have a way of happening even with the best testing. 
 
+
+
 ### Note on AO3's TOS for Web-scraping
 Per their post: 'Selective data dump for fan statisticians' on the 21st March 2021
 "We hope to one day be able to provide regular, automatic dumps of this data, but for now, our focus is on other projects. In the meantime, there are a number of tools available to scrape publicly available data, or you're welcome to build your own. (If you're planning to scrape the Archive, we do ask that you include a delay between requests to reduce load on our servers, and avoid scraping on weekends, which are our busiest time. We'd also appreciate it if you could set your scraper's user agent string to include the word "bot.")"
 
-I have a delay of 6 (the lowest they ask for is 5) in the script that does the actual scraping (num_pp.py) but I tend to alter it myself to a higher number (10 seconds or more) if I'm leaving it to run. The location is marked with a comment so you can alter it easily. Please do not lower it below 5; not only does it put pressure on the servers, it also increases the likelihood of the webpage not loading (the "Retry later" message) and then you won't get the data anyway because those pages will be missed or an error will occur.
+I have a delay of 6 (the lowest they ask for is 5) in the script that does the actual scraping (num_pp.py) but I tend to alter it myself to a higher number (10 seconds or more) if I'm leaving it to run. The location is marked with a comment so you can alter it easily. I use Notepad++ for editing my code, but there are a number of different code editors if you have a search around.
+
+Please do not lower it below 5; not only does it put pressure on the servers, it also increases the likelihood of the webpage not loading (the "Retry later" message) and then you won't get the data anyway because those pages will be missed or an error will occur.
+
 
 ------------------
+
 
 ## Setup
 I have not yet explored Github enough to know how to package for installation via command prompt. So for now
@@ -22,7 +28,7 @@ I have not yet explored Github enough to know how to package for installation vi
 4.  In Command Prompt, cd C:\Enter\Folder\Location (e.g. C:\Users\Zephyr\AO3_Python) will take you to the location so you can run the files without needing to type in the full location string. (Note: if you use the python files regularly and want a short-cut, how to do this will be shown below.)
 5.  Choose the script (single or combination, described below) you want to run and call the file by typing: python example_script.py into the command prompt.
 6.  Some scripts just run without anymore input, others require you to type into the command prompt. This is indicated below. 
-7.  The scripts with work together use a set series of file names to call the next step so if you are doing multiple batches of scraping, make sure to rename       the generated files (url.txt, results.xlsx etc.) to something else before running more scripts. I have no yet tested whether subsequent runs will correctly     append. Once I have, I'll update this Read Me.
+7.  The scripts with work together use a set series of file names to call the next step so if you are doing multiple batches of scraping, make sure to rename       the generated files (url.txt, results.xlsx etc.) to something else before running more scripts as they will over-write. 
 
 ------------------
 
