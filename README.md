@@ -50,7 +50,9 @@ With this file, the pairing names must look how they do on AO3 or it will not sc
 This will use a "pairings.txt" file to scrape the number of works for each pairing on AO3, without a date restriction, and output a file showing the pairing name and the number of works to a .xlsx
 
 Once you have created your pairings.txt file, and navigated your Command Prompt to the correct location, type: python full_pairing_script.py
+
 Various messages should indicate that it is processing (e.g. no Error messages)
+
 Once complete, a .xslx file will have been created with the pairings and work numbers.
 
 Note - I need to work out how to remove an unwanted space from the works (numbers) column. Until done, select that column, use Ctrl + H, put a space in the "Find" box and leave the "Replace" box blank of anything, then 'Replace All'
@@ -64,9 +66,13 @@ full_pairing_script.py will run the following files: gen_pair.py, num_pp.py, and
 This will use a "pairings.txt" file to scrape the number of works for each pairing on AO3, within the dates specified by the user when prompted, and output a file showing the pairing name and the number of works to a .xlsx. The user also has an option to do the process for a single typed in Pairing rather than a list from the .txt
 
 Once you have created your pairings.txt file, and navigated your Command Prompt to the correct location, type: python pairing_choose_date.py
+
 You will be asked if you want to use the pairings.txt file Y/N. Selecting Y will use the file, selecting N will give you the option to type in a single pairing.
+
 Then you will be asked to provide a date range. Take care inputting as I am still to add in a loop to allow re-entry if an incorrect date is provided, so errors will mean starting again.
+
 Various messages should indicate that it is processing (e.g. no Error messages)
+
 Once complete, a .xslx file will have been created with the pairings and work numbers for works tagged with that pairing and works where that is the only pairing tagged (One True Pairing/OTP)
 
 Note - I need to work out how to remove an unwanted space from the works (numbers) column. Until done, select that column, use Ctrl + H, put a space in the "Find" box and leave the "Replace" box blank of anything, then 'Replace All'
@@ -82,7 +88,9 @@ fpairing_choose_date.py will run the following files:
 This pulls the information from the page that you get if you click the Underlined name of the Fandom at the top of that fandom's works page. It can also be reached through https://archiveofourown.org/tags/Fandom Name
 
 It will take the three categories (characters, relationships, freeform) and write them into a .xlsx file.
+
 I am working on adding the feature to the file so that it will automatically delimit based on the comma that separates each section, but until I have done that you can do the following in Excel: High data to be separated, go to Data tab at top, choose 'Text to columns', select the 'Delimited' radio button then next, uncheck default option (usually 'Tab') and check 'Comma'. Press finish.
     
 To run this, once you have navigated Command Prompt to your files via cd as described at the beginning, type: python Pull_biggest_tags_fandom.py
+
 You will be asked to input your fandom tag. Again, this needs to be exactly as it appears on AO3.
