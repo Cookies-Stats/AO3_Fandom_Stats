@@ -67,7 +67,7 @@ def main():
         pairing, category, url = line.strip().split("\t")
 	
 	#Add rate limiting here
-	time.sleep(5) # Rate limiting per AO3's requests (can be as low as 5 and can be higher)
+        time.sleep(5) # Rate limiting per AO3's requests (can be as low as 5 and can be higher)
 		
         work_count = get_work_count(session, url)
         data.append((pairing, category, work_count))
