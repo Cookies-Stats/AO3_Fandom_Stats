@@ -65,6 +65,9 @@ def main():
     for line in lines:
         #Split the line into three columns: Pairing, Category, and URL
         pairing, category, url = line.strip().split("\t")
+	
+	#Add rate limiting here
+	time.sleep(5) # Rate limiting per AO3's requests (can be as low as 5 and can be higher)
 		
         work_count = get_work_count(session, url)
         data.append((pairing, category, work_count))
@@ -89,8 +92,6 @@ def main():
 		
 		# Print the progress message
         print(f"URL {index - 1} successfully scraped")
-		
-        time.sleep(6)  # Rate limiting per AO3's requests (can be as low as 5 and can be higher)
 
     # Save the workbook to an Excel file
     workbook.save("results.xlsx")
