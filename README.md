@@ -25,10 +25,10 @@ I have not yet explored Github enough to know how to package for installation vi
     1. user_agent.txt - AO3 ask (as above) that user agents contain the string 'bot'. A search online of "what is my user agent" can help you find what yours is so you'll paste that into the .txt followed by a semi-colon ; then an identifier of your bot e.g happy.bot. I also add a forward slash and then my e-mail address to adhere to ethical scraping.
     2. login.txt - If you want to be logged into AO3 (to see the stats including Restricted Works) then you'll need to create a login.txt with your username on the top line and your password on the second line.
     3. pairings.txt - If you are scraping multiple pairings, you will also need to create a .txt file in that location with all your pairings saved, one per line, in the way they appear on AO3 (more below)
-4.  In Command Prompt, cd C:\Enter\Folder\Location (e.g. C:\Users\Zephyr\AO3_Python) will take you to the location so you can run the files without needing to type in the full location string. (Note: if you use the python files regularly and want a short-cut, how to do this will be shown below.)
+4.  In Command Prompt, change the directory to where you have the Python files and .txts stored by typing cd C:\Enter\Folder\Location (e.g. C:\Users\Zephyr\AO3_Python). This will take you to the location so you can run the files without needing to type in the full location string each time. (Note: if you use the python files regularly and want a short-cut, how to do this will be shown below.)
 5.  Choose the script (single or combination, described below) you want to run and call the file by typing: python example_script.py into the command prompt.
 6.  Some scripts just run without anymore input, others require you to type into the command prompt. This is indicated below. 
-7.  The scripts with work together use a set series of file names to call the next step so if you are doing multiple batches of scraping, make sure to rename       the generated files (url.txt, results.xlsx etc.) to something else before running more scripts as they will over-write. 
+7.  The scripts which work together use a set series of file names to call the next step so if you are doing multiple batches of scraping, make sure to rename the generated files (url.txt, results.xlsx etc.) to something else before running more scripts as they will over-write. 
 
 ------------------
 
