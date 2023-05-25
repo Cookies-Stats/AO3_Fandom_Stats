@@ -41,7 +41,7 @@ cd C:\Enter\Folder\Location
 
 cmd
 
-Not save the file as change_dir.bat and in the future, you can double click that and it'll load your Command Prompt up in the directory of where you're keeping your Python files.
+Now save the file as change_dir.bat and in the future, you can double click that and it'll load your Command Prompt up in the directory of where you're keeping your Python files.
 
 ------------------
 
